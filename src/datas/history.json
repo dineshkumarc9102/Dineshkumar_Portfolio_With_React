@@ -1,0 +1,26 @@
+[
+    {
+        "role": "Master of Computer Application",
+        "org": "Vellore Institute of Technology (2025)",
+        "grade":"Currently Pursuing 8/10 CGPA",    
+        "imageSrc": "historys/vit.png"
+    },
+    {
+        "role": "Bachelor of Computer Application",
+        "org": "Vellore Institute of Technology (2023)",
+        "grade":"8.5/10 CGPA",
+        "imageSrc": "historys/vit.png"
+    },
+    {
+        "role": "Higher Secondary",
+        "org": "Rathinagiri Bageerathan Matriculation Higher Secondary School (2020)",
+        "grade":"71%",
+        "imageSrc": "historys/rbm.png"
+    },
+    {
+        "role": "Secondary Education",
+        "org": "Rathinagiri Bageerathan Matriculation Higher Secondary School (2018)",
+        "grade":"84%",
+        "imageSrc": "historys/rbm.png"
+    }
+]

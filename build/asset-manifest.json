@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.08b93fe8.css",
+    "main.js": "/static/js/main.3db3327b.js",
+    "static/js/453.a6a97343.chunk.js": "/static/js/453.a6a97343.chunk.js",
+    "static/media/emojione--sun-with-face.svg": "/static/media/emojione--sun-with-face.35dec53ae4b3e52d0968.svg",
+    "index.html": "/index.html",
+    "static/media/icon-park--moon.svg": "/static/media/icon-park--moon.89ae31c76054579a4838.svg",
+    "main.08b93fe8.css.map": "/static/css/main.08b93fe8.css.map",
+    "main.3db3327b.js.map": "/static/js/main.3db3327b.js.map",
+    "453.a6a97343.chunk.js.map": "/static/js/453.a6a97343.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08b93fe8.css",
+    "static/js/main.3db3327b.js"
+  ]
+}

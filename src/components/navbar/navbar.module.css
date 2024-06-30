@@ -1,0 +1,159 @@
+@import "../../vars.css";
+
+
+.navbar {
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 61px;
+    z-index: 2;
+    margin: 0 10%;
+    background-color:transparent;
+    color: var(--color-text-dark);
+}
+
+.navbar.light {
+    background-color: transparent;
+    color: var(--color-text-light);
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 8px 5px 5px #000000;
+    color: var(--color-text);
+}
+.title.light {
+    text-shadow: 2px 2px 5px #ffffff;
+}
+
+.menu {
+    display: flex;
+}
+
+.menuItems {
+    display: flex;
+    gap: 47px;
+    list-style: none;
+}
+
+.menuItems a {
+    font-size: 25px;
+    color: var(--color-text);
+    text-decoration:none;
+}
+
+.menuBtn{
+    width: 50px;
+    display: none;
+}
+
+
+
+ 
+  .menuItems  a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #d5d5cc;
+  }
+  
+  .menuItems  a:hover {
+    color: #74c8db;
+    box-shadow: 0 0 5px #ffffff;
+  }
+
+  
+  .toggleBtn {
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 2px;
+    width: 50px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggleBtn:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-image:url(../../../public/assets/emojione--sun-with-face.svg);
+    background-repeat: no-repeat;  
+    background-position:center; 
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggleBtn.dark:before {
+    transform: translateX(26px); 
+  }
+  
+  .light .toggleBtn:before {
+    transform: translateX(24px);
+    background-image:url(../../../public/assets/icon-park--moon.svg);
+    background-repeat: no-repeat;  
+    background-position:center;   }
+  
+  .light .toggleBtn {
+    background-color: #000000;
+  }
+  
+  .dark .toggleBtn {
+    background-color: #ffffff;
+  }
+  
+
+@media screen and (max-width:830px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu{
+        position: absolute;
+        right: 0;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+    }
+    .menuBtn{
+        width: 50px;
+        display: block;
+        cursor: pointer;
+    }
+    .menuItems{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        border-radius: 10px;
+        background: rgb(25, 55, 109);
+        background: linear-gradient(
+            0deg,
+            rgba(25,55,109,0.2)0%,
+            rgba(25,55,109,1)100%
+        );
+        padding: 24px 33px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    }
+    .menuOpen{
+        display: flex;
+        z-index: 1;
+    }
+    .toggleBtn{
+        display: block;
+        margin-top: -40px;
+        margin-left: 95%;
+    }
+
+    
+}

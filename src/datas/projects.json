@@ -1,0 +1,30 @@
+[
+    {
+        "title":"Detection and Prediction of Phishing Websites. (2022)",
+        "imageSrc":"projectsdone/ml.png",
+        "des":"Its goal was to identify effective classifiers for classification performance.",
+        "skills":["Machine Learing", "Python", "Jupyter Notebook"],
+        "source":"https://github.com/dineshkumarc9102/Dineshkumar_Detection_And_Prediction_Of_Phishing_Websites_Using_Data_Mining_Techniques"
+    },
+    {
+        "title":"Feature Selection and Classification Model for Cancer. (2023)",
+        "imageSrc":"projectsdone/ml.png",
+        "des":"It conducted predictive analysis to optimize algorithm selection and minimize error rates using confusion matrices and entropy.",
+        "skills":["Machine Learing", "Python", "Jupyter Notebook"],
+        "source":"https://github.com/dineshkumarc9102/Dineshkumar_Feature_Selection_And_Classification_Model_For_Cancer"
+    },
+    {
+        "title":"Agro Mobile Application. (2023)",
+        "imageSrc":"projectsdone/app.png",
+        "des":"The application is to allow farmers to fix a satisfactory rate for their product and to sell them as well. A user can login as a farmer, customer, retailers and even as hotel managers.",
+        "skills":["Java", "XML", "Android Studio"],
+        "source":"https://github.com/dineshkumarc9102/Dineshkumar_Agro_Application"
+    },
+    {
+        "title":"My Portfolio Website. (2024)",
+        "imageSrc":"projectsdone/ws.png",
+        "des":"This is my portfolio showcasing projects I've worked on and contributions I've made.",
+        "skills":["HTML", "CSS", "JavaScript", "React"],
+        "source":"https://github.com/dineshkumarc9102/Dineshkumar_PortfolioWithReact.git"
+    }
+]

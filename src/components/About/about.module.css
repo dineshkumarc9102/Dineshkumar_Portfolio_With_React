@@ -1,0 +1,129 @@
+@import "../../vars.css";
+
+.container{
+    position: relative;
+    /* background-color: rgba(12,12,12,0.6); */
+    border-radius: 15px;
+    padding: 73px;
+    margin-top: 129px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: var(--color-dark-dark);
+    color: var(--color-text-dark);
+}
+
+.container.light {
+    background:linear-gradient(
+        50deg,
+        #19376d 0%,
+        #ffffff 100%
+    );
+    color: var(--color-text-light);
+    box-shadow: 1px 1px 8px 1px #020202;
+    padding: 20px;
+  }
+
+.title{
+    color: var(--color-text);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.aboutimg{
+    width: 35%;
+    border-radius: 80px;
+}
+
+.aboutimg.light{
+    box-shadow: 10px 10px 5px #000000;
+    width: 30%;
+}
+
+.aboutItems{
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    color: darkgray;
+    list-style: none;
+    margin-left: 55px;
+    padding: 10px;
+    background-image: linear-gradient(
+        90deg
+        rgba(165,215,232,0.42)10%,
+        rgba(255,255,255,0)100%
+    );
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+
+.aboutls h2{
+    color: white;
+}
+
+.aboutls.light {
+    color: #000000;
+    font-weight: 400;
+}
+
+.aboutls h2 span{
+    color: var(--color-text2-dark);
+    padding-left: 30px;
+}
+.tit.light{
+    color: var(--color-text-dark);
+}
+.con.light{
+    color: var(--color-text-light);
+}
+.aboutls h1{
+    margin-top: 50px;
+    color: white;
+}
+
+
+.aboutls p{
+    font-size: 22px;
+    color: var(--color-text);
+}
+
+
+@media screen and (max-width:830px){
+    .container{
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .aboutimg{
+        display: none;
+    }
+    .aboutItems{
+        margin-top: 29px;
+    }
+    .aboutls{
+        font-size: 12px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
