@@ -1,0 +1,200 @@
+@import "../../vars.css";
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    z-index: 2;
+    margin: 0 10%;
+    background-color: transparent;
+    color: var(--color-text-dark);
+    transition: all 0.3s ease;
+}
+
+.navbar.light {
+    color: var(--color-text-light);
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #000000;
+    color: var(--color-text);
+    transition: text-shadow 0.3s ease, font-size 0.3s ease;
+}
+
+.title.light {
+    text-shadow: 2px 2px 5px #ffffff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menuItems {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menuItems a {
+    font-size: 28px;
+    color: var(--color-text);
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menuBtn {
+    display: none;
+    cursor: pointer;
+}
+
+.menuItems a::before,
+.menuItems a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all 0.35s ease;
+    opacity: 0;
+}
+
+.menuItems a::before {
+    right: -10px;
+    top: -10px;
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    transform: translate(-100%, 90%);
+}
+
+.menuItems a::after {
+    left: -10px;
+    bottom: -10px;
+    border-bottom: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    transform: translate(10%, -50%);
+}
+
+.menuItems a:hover::before,
+.menuItems a:hover::after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.menuItems a:hover {
+    color: #dbd4d4;
+    border-radius: 4px;
+}
+.navbar.light .menuItems a::before,
+.navbar.light .menuItems a::after {
+    border-color: #000000;
+}
+
+.navbar.light .menuItems a:hover {
+    color: #292929;
+}
+
+.toggleBtn {
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggleBtn:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-image: url('../../assets/noto--new-moon-face.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-image 0.3s ease;
+}
+
+.toggleBtn.dark:before {
+    transform: translateX(26px);
+}
+
+.light .toggleBtn:before {
+    transform: translateX(24px);
+    background-image: url('../../assets/emojione--sun-with-face.svg');
+}
+
+.light .toggleBtn {
+    background-color: #000000;
+}
+
+.dark .toggleBtn {
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 830px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 10px;
+        margin: 0 5%;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        margin-right: 5%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 15px;
+        z-index: 3;
+    }
+
+    .menuBtn {
+        width: 30px;
+        display: block;
+        margin-left: auto;
+    }
+
+    .menuItems {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        border-radius: 10px;
+        background: linear-gradient(0deg, rgba(25, 55, 109, 0.8) 0%, rgba(25, 55, 109, 1) 100%);
+        padding: 20px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .menuOpen {
+        display: flex;
+        z-index: 1;
+    }
+
+    .toggleBtn {
+        display: block;
+        margin-top: -26px;
+        margin-left: auto;
+    }
+    .light .menuItems{
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgb(183, 183, 183) 100%);
+    }
+}

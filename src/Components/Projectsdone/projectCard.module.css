@@ -1,0 +1,144 @@
+@import "../../vars.css";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+    border-radius: 10px;
+    background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+    box-shadow: 0 16px 14px 0 #04152d;
+    padding: 18px 24px;
+    width: 345px; 
+    height: 650px; 
+    background-color: var(--color-secondary-dark);
+    color: var(--color-text-dark);
+    transition: all 0.3s ease;
+}
+
+.container.light {
+    background: whitesmoke;
+    color: var(--color-text-light);
+}
+
+.container:hover {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border: 2px solid rgb(240, 238, 238);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.image {
+    margin-bottom: 20px; 
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center; 
+}
+
+.description {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center; 
+}
+
+.skills {
+    width: 100%;
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center; 
+    list-style: none;
+    padding: 0; 
+}
+
+.skill {
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 100px;
+    background: var(--color-primary-dark);
+    padding: 2px 22px;
+}
+
+.links {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color-text2-dark);
+    font-size: 20px; 
+    font-weight: 600;
+    border-radius: 100px;
+    background: var(--color-primary);
+    padding: 10px 20px; 
+    transition: all 0.3s ease;
+}
+
+.link.light {
+    color: var(--color-text-light);
+    border: 1px solid black;
+}
+
+.link:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #d5d5cc;
+}
+
+.link:hover {
+    color: var(--color-primary-dark);
+    background: #dddddd;
+    box-shadow: 0 0 5px #d5d5cc;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px 16px;
+        box-shadow: none;
+        height: auto; 
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .skills {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .skill {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .link {
+        font-size: 16px; 
+        padding: 8px 10px;
+        text-align: center;
+    }
+}
